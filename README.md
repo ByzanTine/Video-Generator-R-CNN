@@ -1,6 +1,10 @@
 # N-Class Prediction Combine and Video Generation
 For the usage of RCNN Prediction Combined
 
+## USAGE
+
+sh pipe.sh /path/to/frames /path/to/detection video_name
+
 ## INPUT 
 
 R-CNN prediction file (intermediate result)
