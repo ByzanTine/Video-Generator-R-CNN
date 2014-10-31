@@ -6,7 +6,14 @@ index_score = []
 content = []
 filenames = []
 # Find the files in the specified folder
-for filename in os.listdir(sys.argv[1]):
+# TODO: I don't think we can guarantee the order of os.listdir().
+#       I'll sort the list for now and assume that the filenames are specified
+#       accordingly (to match the expected order, for the labels for instance).
+#       Needs to be rethink.
+list = os.listdir(sys.argv[1])
+list.sort()
+for filename in list:
+    print filename
     # Join the path with pwd
     filename=os.path.realpath(sys.argv[1]+filename)
     filenames.append(filename)

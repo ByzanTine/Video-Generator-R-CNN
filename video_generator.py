@@ -3,6 +3,7 @@ import cv2
 import sys
 import logging
 
+
 class VideoGenerator(object):
 
     def generate(self, frames, video_filename=None):
@@ -34,6 +35,7 @@ if __name__ == "__main__":
     import frames_annotating_functions as fa
 
     # TODO: Ordering the videos ...
+    
     logging.basicConfig(level=logging.DEBUG);
     if len(sys.argv) < 3:
         logging.error('Not Enough Argument!')

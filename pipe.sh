@@ -1,3 +1,5 @@
+# TODO: Maybe we should threshold before we combine?
+
 # Top Level Interface
 
 
@@ -30,9 +32,9 @@ number_classes=0
 combined_list='combined_list'
 
 # Cache Dir
-cache_dir='cache/'$(date +%Y-%m-%d-%T)
+# cache_dir='cache/'$(date +%Y-%m-%d-%T)
 # another choice
-# cache_dir=$detection_place
+cache_dir=$detection_place
 
 # Create a tmp folder
 mkdir $cache_dir
@@ -67,7 +69,7 @@ echo 'DEBUG:INFO: Number of Class' $number_classes
 python maxjoin.py $detection_place $cache_dir'/'$combined_list
 # Run the thresholding and store in cache_dir
 
-python threshold_images.py $cache_dir'/'$combined_list
+python threshold_images.py $cache_dir$combined_list
 
 # Name for the final prediction file
 

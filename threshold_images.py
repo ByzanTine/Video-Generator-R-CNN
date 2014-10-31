@@ -2,12 +2,16 @@ import sys
 import os
 import numpy as np
 
+
 #Specify the threshold the score you want to use
-thresholds = [-1, -1, -1, -1]
+thresholds = [-0.7, -0.8, -1.0, -0.75] # Works fine on dummy videos.
+# thresholds = [-0.35, -0.5, -0.7, -0.475] # Works fine on human video r21.
 
 # detection_file = 'combine_regr_11'
 detection_file = sys.argv[1]
 # frame_id, score, x_min, y_min, x_max, y_max, label
+
+print detection_file
 
 output_file = os.path.splitext(detection_file)[0] # We get rid of the extension.
 output_file = open(output_file + '_thresholded', 'w')
