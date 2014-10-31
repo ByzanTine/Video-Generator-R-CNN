@@ -3,7 +3,7 @@ For the usage of RCNN Prediction Combined
 
 ## USAGE
 
-sh pipe.sh /path/to/frames /path/to/detection video_name
+	sh pipe.sh /path/to/frames /path/to/detection video_name
 
 ## INPUT 
 
