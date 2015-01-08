@@ -9,8 +9,9 @@ For the usage of RCNN Prediction Combined
 
 R-CNN prediction file (intermediate result)
 See Samples if you are not clear ./sample/vocalcord_det.txt
-Content: index 	 score     xmin ymin xmax ymax
-	 07_0123 -1.062129 45   97   68   118
+
+	Content: index 	 score     xmin ymin xmax ymax
+		 	 07_0123 -1.062129 45   97   68   118
 Also for video generation, you need corresponding frames
 ## OUTPUT
 
